@@ -1,0 +1,5 @@
+Npm - -S express-session
+Nodemon server
+
+Review server.js code
+Redis is used to store sesssion cookies

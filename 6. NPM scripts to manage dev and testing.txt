@@ -1,0 +1,24 @@
+Very powerful tools 
+
+Package.json
+
+Scripts
+	- Start: node app
+	- Dev: nodemon app
+	- Pretest: "echo starting tests!!!"
+	- Test: node test
+	- Posttest: "echo thanks for testing:
+	- Test-watch: nodemon test
+
+Npm test
+Npm start
+	Node app
+Npm run dev // does not know dev (local), only test and start
+
+Use npm start for all projects
+Npm I --save-dev nodemon (stored in Node_modules/.bin)
+
+Nodemon app // used to restart app during development
+
+Create unit tests using test.js
+Var assert = require("assert"); // evals to true

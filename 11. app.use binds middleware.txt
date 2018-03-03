@@ -1,0 +1,19 @@
+
+app.use() is intended for binding middleware to your application. The path is a "mount" or "prefix" path and limits the middleware to only apply to any paths requested that begin with it. It can even be used to embed another application:
+// subapp.jsvar express = require('express');var app = modules.exports = express();// ...
+// server.jsvar express = require('express');var app = express();
+app.use('/subapp', require('./subapp'));
+// ...
+By specifying / as a "mount" path, app.use() will respond to any path that starts with /, which are all of them and regardless of HTTP verb used:
+	• GET /
+	• PUT /foo
+	• POST /foo/bar
+	• etc.
+app.get(), on the other hand, is part of Express' application routing and is intended for matching and handling a specific route when requested with the GET HTTP verb:
+	• GET /
+And, the equivalent routing for your example of app.use() would actually be:
+app.all(/^\/.*/, function (req, res) {    res.send('Hello');});
+
+From <https://stackoverflow.com/questions/15601703/difference-between-app-use-and-app-get-in-express-js> 
+
+

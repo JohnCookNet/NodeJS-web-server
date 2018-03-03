@@ -1,0 +1,44 @@
+Create server.js
+Npm init -y
+Npm -I --save-dev nodemon
+Edit package.json
+	Scripts
+	Dev: "nodemon server",
+	Test "echo \"Error: no test specified\" && exite 1:,
+	Start: "node server.js"
+	
+Npm run dev
+
+Edit server.js
+Var http = require("http");
+Var server = http.createServer(function( request, response) {
+	Var headers = request.headers
+	Var method = request.method
+	Var url = request.url;
+	
+Console.log("request received"); // local msg only
+Console.log(headers, method, url);
+
+// basic routing
+If (url === "/" {
+	//handlers.homepage(req, res);
+	Response.setheader(Content-Type", text/html");
+	Response.end("<h1>hello world</h1>");
+	} 
+	else if (url === "/profile") {
+	Var profile = {
+	Name: "Will",
+	Age: 35,
+	};
+	Response.setHeader("Content-Type", "application/json"): //express.js will set json and stringify automatically
+	Response.end(JSON, stringify(profile));
+	//install json view for chrome
+	};
+});
+
+Server.listen(3000);
+
+// move response to handlers.js
+Exports.homepage=function(request, response) {
+Exports.profile=function(request, response){
+Exports.notFound = function(req, resp);

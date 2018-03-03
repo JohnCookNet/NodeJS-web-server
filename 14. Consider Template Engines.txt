@@ -1,0 +1,10 @@
+Comment engines: Pug (fka jade), mustache and EJS, Hogan
+	1. Set properties in app.js (or default app)
+		App.set('views', './views') location of template files
+		App.set(view engine, pug)
+	2. Install template engine
+		npm install pug --save
+	3. Create pug template (index.pug)
+	4. Create route to render template
+		App.get(/, function(r,r){
+Res.render("index", {title, tweets, show tweets, partials{}}

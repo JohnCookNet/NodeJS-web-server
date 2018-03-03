@@ -1,0 +1,26 @@
+
+NPM - package management sytem
+Npm install Lodash - installs lodash in node_modules
+	_.snakecase values
+	
+Lodash (twitter team) makes JavaScript easier by taking the hassle out of working with arrays, numbers, objects, strings, etc. Lodash’s modular methods are great for:
+	• Iterating arrays, objects, & strings
+	• Manipulating & testing values
+	• Creating composite functions
+
+From <https://lodash.com/> 
+
+Use NPM init to create custom (smaller) json packages
+	- Dependencies section.
+	- Npm install install dependencies not included. 
+	- Use caret or tilde to manage dependency Minor or patch versions
+
+Axios - Promise based http client
+Npm install axios -save
+
+Install Mocha in dev
+Npm install --save-dev mocha
+
+Npm install  (all dependencies)
+Npm install --production (skips devDependencies) when deploying
+

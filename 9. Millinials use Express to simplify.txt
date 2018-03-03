@@ -1,0 +1,24 @@
+Most popular framework for node.js // sim to sinatra for ruby
+Simplifies coding
+
+Npm I -S express
+Npm I --save-dev nodemon
+
+Server.js
+Const express = require("express");
+Con app = express();
+App.get("/", (req, res) => {
+	Res.send(helo world); // automaticall adds content type
+
+App.get("/profile")
+Var prifile = "name: "Will"};
+Res.set(profile); // adds content and stringify json
+
+Express uses concept of middleware
+App.get
+	.get
+	.get
+// can use app.use function
+App.Use
+…
+If (req.method === get && req. url ===/

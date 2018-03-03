@@ -1,0 +1,4 @@
+// Watch some introductory videos Node.JS
+// Understand what REPL means
+// Determine how Variables are used in Node
+// Process dump

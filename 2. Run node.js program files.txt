@@ -1,0 +1,19 @@
+// Create file called app.js
+// Run file using Node app (or app.js)
+// Node development is community driven
+
+// Examples of basic command line usages
+Console.log("helo word");
+setTimeout(function());
+
+// Pass values, converting strings to numbers, then adding them.
+Console.log(Process.argv);
+Var a =Number( process.argv[2])
+Var b =Number( process.argv[3])
+
+// A=3 node app 1 5
+Console.log(a+b);
+Console.log(process.env.A); 
+
+// use to process command line args using if statements.
+Var command = process.argv[2]; 

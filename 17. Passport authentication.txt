@@ -1,0 +1,24 @@
+Uses passport.js
+
+Npm I -S passport passport-local knex mysql
+
+Config passport with strategy
+
+Login with username from db 
+Setup middleware
+Setup login and logout routers
+
+Require(./passport)
+Require knex
+Require passport-local).strategy
+Passport.user(localstrategy(function(authenticate)
+Function authenticate(email.pass, doc)
+Done() is called with sytem error using null or false passed to users
+Connect to database
+Db(users) were email
+First()
+Then(use) if !user or user != password return (not found)
+Done
+
+Serialize user after authentication
+Stores hashid  in cookie

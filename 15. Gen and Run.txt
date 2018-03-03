@@ -1,0 +1,27 @@
+Global module express-generator
+
+Express name-of-module --hogan -css
+
+Install dependencies:
+Cd modname  && npm install
+
+Runt the app
+DEBUG=modname:* npm start
+
+Copy bin/www code to views\server.js
+Change dirname to 'app:server' in var debug
+
+Require, fire and listen for request
+
+Start server with npm start or PORT=3001 npm start
+
+To include debug messages:
+DEBUG=app:* npm start
+DEBUG=app.server npm start
+
+Var debug = require('debug')('app:production');
+Var devDebug = require('debug')('app:dev');
+
+** app.js **
+
+Reuse code here> -12-generating code

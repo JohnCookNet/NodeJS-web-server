@@ -1,0 +1,47 @@
+Setup routes and Create basic API
+
+The purpose of node.js and express.js middleware is to organize router code can be namespace using app.usr. The recommendation for app dev is to create a folder called routes and stuff logic inside files  named after namespace sections.
+
+Basic steps:
+	1. create file called users.js
+	2. Import express
+		a. Require(express)
+	3. Instantiate router
+		a. Express.router()
+	4. Use router
+		a. Router.get /,req,res 
+			i. Res.send(ok)
+		b. Router.Get(/users)
+			i. Res.send(hey users)
+	5. Run server to test> Nodemon server
+
+How routes work
+	Namespace middleware to specific path i.e. /users
+	Create multiple routes and control paths using next()
+	Get post middleware helpers
+
+Pass data into Node using get:
+	Add request parameters
+	Capture parameters using ":"  i.e. get("/:id/:name/:LastName", req, res, next)
+	Add ? At end of name to make it optional use
+
+	Get query commands
+	Params using req.query
+
+Pass data using Post body
+	Post has additional overhead i.e. Req.body and Res.send
+	Suggests installing body-parser (for express) using npm
+	Import body parser
+	Make sure to .use(bodyParser.json()) before app.user
+	Use post man to send post requests
+	Body parser also supports html forms and url encoded 
+	Key takeaway offload form type to autoset rec.body format (App/json vs html form)
+
+Create sample API
+	.get /   //users
+	.get/:id
+	.delete /:id
+
+Get mockaroo.com test data
+	Var users= [{data array}]
+	Use api to send response of user array - Res.send users

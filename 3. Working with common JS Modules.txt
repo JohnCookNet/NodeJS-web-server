@@ -1,0 +1,15 @@
+// import javascript or json
+// add to the top of page
+// sort alphabetically for readability
+Import modules
+Var math = require("./math");
+
+// dump module connection information
+Console.log(module);
+
+// Modules must export data using module.exports
+// use exports. dot funcationality to add additional module properties
+Exports.add = function (a,b) 
+
+// cleaner to add them one at a time as opposed to passsing them at the end of the file
+

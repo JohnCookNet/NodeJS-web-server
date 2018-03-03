@@ -1,0 +1,22 @@
+Serves index.html and other files that match name
+
+Create folder for assets
+    Public
+	Css
+	Js
+Create index.html file
+Set static assest directory
+	Const staticAssets = __dirname +"/public"
+App
+	.use(express.static()) //static plugin
+	
+Setup favicon
+Copy ico into public
+Install favicon -> Npm I -S server-favicon
+Const favicon = Require(serve-favicon)
+Const faviconPath = __direcname + "/public/favincon.ico";
+
+Add .user under app
+.user(favicon(faviconPath))
+
+As an alternative, dump all files into a src directory (single page html file with lots of js files)

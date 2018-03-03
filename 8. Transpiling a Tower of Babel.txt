@@ -1,0 +1,32 @@
+// programming in ES5 syntax
+// ES6 contains new 2016 features
+//lists harmony objects not yet complete - they are plus
+
+Node--va8options | grep "in progress"
+
+Can use today using Babel Transpolation in node.js
+
+Get Babel
+Npm init - y
+Npm I -s babel-register babel-preset-2015 //transpiles code
+Touch .babelrc // stores presets
+{ "presets: bable2015
+Touch main.js
+Mkdir src
+Touch src/handlers.js
+Touch src/servers.js
+//main.js imports babel register and kicks off source code into transpilation
+require(babel-register) //modifies requires - so everything runs in babel
+Require(src/server) // run server on bable
+//handers
+Export function homepage(req, resp);
+Response.setheader(content-type text/html)
+Response.end(hello world);
+//server.js
+Import http from http
+Import homepage, notfound} from "./handlers
+Const server = http.create server
+Homepage(req,response);
+
+
+Run using Node main.js
