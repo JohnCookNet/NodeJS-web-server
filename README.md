@@ -1,2 +1,2 @@
 # NodeJS-web-server
-Sample scripts to develop a Node JS web server
+Notes for developing a Node JS web server
