@@ -27,8 +27,8 @@ If (url === "/" {
 	} 
 	else if (url === "/profile") {
 	Var profile = {
-	Name: "Will",
-	Age: 35,
+	Name: "John",
+	Age: 27,
 	};
 	Response.setHeader("Content-Type", "application/json"): //express.js will set json and stringify automatically
 	Response.end(JSON, stringify(profile));

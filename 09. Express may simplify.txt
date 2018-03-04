@@ -11,7 +11,7 @@ App.get("/", (req, res) => {
 	Res.send(helo world); // automaticall adds content type
 
 App.get("/profile")
-Var prifile = "name: "Will"};
+Var prifile = "name: "John"};
 Res.set(profile); // adds content and stringify json
 
 Express uses concept of middleware
